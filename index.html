@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required by App Bridge: your app's Client ID from the Shopify Partner Dashboard -->
+    <meta name="shopify-api-key" content="%VITE_SHOPIFY_API_KEY%" />
+    <!-- App Bridge must load first, directly from Shopify's CDN (do not bundle/self-host) -->
+    <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js"></script>
+    <!-- Polaris web components runtime for `s-*` elements -->
+    <script src="https://cdn.shopify.com/shopifycloud/polaris.js"></script>
+    <title>OrderMAX Admin</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
